@@ -6,10 +6,10 @@
 }
 
 .notes-card {
-  border: 2px solid #FFFFFF; 
-  border-radius: 8px;
+  border-radius: 1px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
   padding: 15px;
-  background-color: #F7F7F7; 
+  background: rgba(200, 200, 200, 0.2); 
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
@@ -36,18 +36,18 @@
   top: 10px;
   left: 100px;
   z-index: 1000;
-  background: rgba(200, 200, 200, 0.3);
+  background: rgba(200, 200, 200, 0.2);
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
 .map-title {
-  background: #FFFFFF;
+  background: rgba(200, 200, 200, 0.2);
   padding: 3px;
-  border-radius: 3px;
-  box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+  border-radius: 1px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
   margin-bottom: 1px;
   font-family: Arial, sans-serif;
+  color: #000000;
 }
-  
