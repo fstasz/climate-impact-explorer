@@ -54,7 +54,7 @@ server <- function(input, output, session) {
       clearControls() %>%
       addLegend(
         "bottomright", 
-        pal = colorNumeric(palette = c('#FFEDA0', '#800026'), domain = c(filteredData()$increase, NA), na.color = textContent$server$naColor),
+        pal = colorNumeric(palette = c('#fee5d9', '#cb181d'), domain = c(filteredData()$increase, NA), na.color = textContent$server$naColor),
         values = ~increase,
         labFormat = labelFormat(prefix = "", suffix = "%", between = " to "),
         title = textContent$server$legendTitle,
@@ -71,9 +71,9 @@ server <- function(input, output, session) {
   
   # Get color for the map over range to illustrate cooler to warmer temps.
   getColor <- function(d) {
-    ifelse(d > 10, '#800026',
-           ifelse(d > 5, '#BD0026',
-                  ifelse(d > 2, '#E31A1C',
-                         ifelse(d > 0, '#FC4E2A', '#FFEDA0'))))
+    ifelse(d > 10, '#cb181d',
+           ifelse(d > 5, '#fb6a4a',
+                  ifelse(d > 2, '#fcae91',
+                         ifelse(d > 0, '#fee5d9', '#fee5d9'))))
   }
 }
