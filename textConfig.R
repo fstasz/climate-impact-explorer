@@ -10,7 +10,7 @@ textContent <- list(
     unitMeasurementLink = "https://www.ncei.noaa.gov/data/global-summary-of-the-year/doc/GSOY_documentation.pdf",
     percentIncreaseCalculationLabel = "Percent increase calculation:",
     percentIncreaseCalculation = "Computed by subtracting the unrounded annual average temperature (TAVG) of the previous year from that of the current year, dividing by the previous year’s unrounded TAVG, and multiplying by 100.",
-    limitations = "Weather stations did not report temperature for specific years in some cases. When this has occurred, points are rendered gray on the map.",
+    limitations = "For some year combinations, temperature data from weather stations was not available. In these cases, the corresponding points on the map are rendered in blue.",
     limitationsLabel = "Limitations:",
     sliderLabel = "Select Date Range",
     link = "Link",
@@ -25,7 +25,7 @@ textContent <- list(
     legendTitle = "% Increase",
     legendNaLabel = "NA",
     titleHtml = "<div class='map-title'><h4><b>Annual Temperature Increases Across the U.S.</b></h4></div>",
-    naColor = "gray"
+    naColor = "#1E90FF"
   ),
   global = list(
     filePath = "data/part-00000-6493846c-82e3-4254-b526-69f47f978877-c000.csv"
