@@ -10,9 +10,10 @@ This app illustrates average annual temperature increases across the United Stat
 ## Components
 -	The R [Shiny](https://shiny.posit.co/) app development framework was leveraged for developing and deploying the app modules.
 -	The [Leaflet](https://leafletjs.com/) library was leveraged for interactive map visualization, map features, and interactions.
+-  [ColorBrewer](https://colorbrewer2.org/) was leveraged for choosing a colorblind safe color palette.
 
 ## Limitations
-Weather stations did not report temperature for specific years in some cases. When this has occurred, points are rendered gray on the map.
+For some year combinations, temperature data from weather stations was not available. In these cases, the corresponding points on the map are rendered in blue.
 
 ## Viewing the App
 You can view the live app running [here](https://fstasz.shinyapps.io/tempChange/).
@@ -20,4 +21,4 @@ You can view the live app running [here](https://fstasz.shinyapps.io/tempChange/
 ## License
 Licensed under the [Apache License 2.0](LICENSE) – See [LICENSE](LICENSE) for details.
 
-Thank you to [NOAA](https://www.noaa.gov/) for providing the temperature data used in this app.
+Special thanks to [NOAA](https://www.noaa.gov/) for providing the temperature data used in this app.
