@@ -25,14 +25,14 @@ ui <- fluidPage(
   
   fluidRow(
     # First row: position map on top.
-    column(width = 12,
-           leafletOutput("tempMap", height = 700)
+    column(width = textContent$ui$mapColumnWidth,
+           leafletOutput("tempMap", height = textContent$ui$mapColumnHeight)
     )
   ),
   
   fluidRow(
     # Second row: position below map.
-    column(width = 12,
+    column(width = textContent$ui$mapColumnWidth,
            tags$div(class = "notes-card",
                     h5(strong(textContent$ui$descriptionTitle)),
                     p(textContent$ui$descriptionText),

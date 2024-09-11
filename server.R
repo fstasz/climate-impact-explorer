@@ -19,7 +19,7 @@ server <- function(input, output, session) {
         startTemp = ifelse(any(DATE == startYear & !is.na(TAVG)), TAVG[DATE == startYear], NA),
         endTemp = ifelse(any(DATE == endYear & !is.na(TAVG)), TAVG[DATE == endYear], NA),
         increase = ifelse(is.na(startTemp) | is.na(endTemp), NA, (endTemp - startTemp) / startTemp * 100),
-        .groups = 'drop'
+        .groups = "drop"
       )
     
     percentIncrease
@@ -43,7 +43,7 @@ server <- function(input, output, session) {
         ~LONGITUDE, 
         ~LATITUDE,
         weight = 3,
-        color = ~ifelse(is.na(increase), 'gray', getColor(increase)),
+        color = ~ifelse(is.na(increase), textContent$server$naColor, getColor(increase)),
         radius = ~ifelse(is.na(increase), 5, increase / 2),
         popup = ~ifelse(
           is.na(increase),
@@ -54,7 +54,7 @@ server <- function(input, output, session) {
       clearControls() %>%
       addLegend(
         "bottomright", 
-        pal = colorNumeric(palette = c('#FFEDA0', '#800026'), domain = c(filteredData()$increase, NA), na.color = 'gray'),
+        pal = colorNumeric(palette = c('#FFEDA0', '#800026'), domain = c(filteredData()$increase, NA), na.color = textContent$server$naColor),
         values = ~increase,
         labFormat = labelFormat(prefix = "", suffix = "%", between = " to "),
         title = textContent$server$legendTitle,
@@ -69,7 +69,7 @@ server <- function(input, output, session) {
   
   # Helper functions.
   
-  # Define a function to get color for the map over range to illustrate cooler to warmer temps.
+  # Get color for the map over range to illustrate cooler to warmer temps.
   getColor <- function(d) {
     ifelse(d > 10, '#800026',
            ifelse(d > 5, '#BD0026',

@@ -15,14 +15,17 @@ textContent <- list(
     sliderLabel = "Select Date Range",
     link = "Link",
     sliderMin = 1963,
-    sliderMax = 2023
+    sliderMax = 2023,
+    mapColumnWidth = 12,
+    mapColumnHeight = 700 
   ),
   server = list(
     popupDataUnavailable = "<b>Station:</b> %s<br><b>Data unavailable for the selected date range.</b>",
     popupIncrease = "<b>Station:</b> %s<br><b>Increase:</b> %.2f%%",
     legendTitle = "% Increase",
     legendNaLabel = "NA",
-    titleHtml = "<div class='map-title'><h4><b>Annual Temperature Increases Across the U.S.</b></h4></div>"
+    titleHtml = "<div class='map-title'><h4><b>Annual Temperature Increases Across the U.S.</b></h4></div>",
+    naColor = "gray"
   ),
   global = list(
     filePath = "data/part-00000-6493846c-82e3-4254-b526-69f47f978877-c000.csv"
