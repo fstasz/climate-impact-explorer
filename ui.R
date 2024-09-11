@@ -4,9 +4,9 @@ source("textConfig.R")
 # UI.
 ui <- fluidPage(
   
-  # Add css.
+  # Add css and fetch the latest css file.
   tags$head(
-    tags$link(rel = "stylesheet", type = "text/css", href = "styles.css")
+    tags$link(rel = "stylesheet", type = "text/css", href = "styles.css?v=1.1")
   ),
 
   # Position slider over the map.
