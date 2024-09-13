@@ -8,9 +8,10 @@ This app illustrates average annual temperature increases across the United Stat
 - **Data Dictionary:** [Documentation](https://www.ncei.noaa.gov/data/global-summary-of-the-year/doc/GSOY_documentation.pdf)
 
 ## Components
--	The R [Shiny](https://shiny.posit.co/) app development framework was leveraged for developing and deploying the app modules.
--	The [Leaflet](https://leafletjs.com/) library was leveraged for interactive map visualization, map features, and interactions.
--  [ColorBrewer](https://colorbrewer2.org/) was leveraged for choosing a colorblind safe color palette.
+- R [Shiny](https://shiny.posit.co/) app development framework was leveraged for developing and deploying the app modules.
+- [Leaflet](https://leafletjs.com/) library was leveraged for interactive map visualization, map features, and interactions.
+- [dplyr](https://dplyr.tidyverse.org/) library was leveraged for data processing.
+- [ColorBrewer](https://colorbrewer2.org/) was leveraged for choosing a colorblind safe color palette.
 
 ## Limitations
 For some year combinations, temperature data from weather stations was not available. In these cases, the corresponding points on the map are rendered in blue.
