@@ -1,7 +1,9 @@
 # Annual Temperature Increases Across the U.S.
 
 ## Description
-This app illustrates average annual temperature increases across the United States from 1963 to 2023. Information on calculation methods and usage can be viewed in the description below the map in the app.
+This app illustrates average annual temperature increases across the United States from 1963 to 2023.
+
+![Screenshot](www/map.jpg)
 
 ## Data
 - **Data Source:** [NOAA Global Summary of the Year](https://www.ncei.noaa.gov/access/search/data-search/global-summary-of-the-year)
