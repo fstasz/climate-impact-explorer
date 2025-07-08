@@ -1,7 +1,7 @@
 # Annual Temperature Increases Across the U.S.
 
 ## Description
-This app illustrates average annual temperature increases across the United States from 1963 to 2023.
+This R Shiny app visualizes average annual temperature increases across the United States from 1963 to 2023, using data from NOAA’s Global Summary of the Year. Users can explore geographic trends through an interactive map interface.
 
 ![Screenshot](www/map.jpg)
 
